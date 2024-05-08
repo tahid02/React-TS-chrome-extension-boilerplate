@@ -4,6 +4,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const HtmlPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
+  devtool: "cheap-module-source-map",
   entry: { popup: path.resolve("./src/popup/popup.tsx") }, // the base file ( where other files were imported)
   module: {
     rules: [
