@@ -9,6 +9,8 @@ module.exports = {
   entry: {
     popup: path.resolve("./src/popup/popup.tsx"),
     options: path.resolve("./src/options/options.tsx"),
+    background: path.resolve("./src/background/background.ts"),
+    contentScript: path.resolve("./src/contentScript/contentScript.tsx"),
   }, // the base file ( where other files were imported)
   module: {
     rules: [
@@ -48,7 +50,7 @@ module.exports = {
       chunks: ["popup"], // this is  a single js file produced by webpack
     }),
     new HtmlPlugin({
-      // we could have copied popup.html like manifest.json but we are using pupup.tsx that needs to be bundled
+      // we could have  directly create options.html in src , but we are using pupup.tsx that needs to be bundled
       title: "React extension",
       filename: "options.html",
       chunks: ["options"], // this is  a single js file produced by webpack
