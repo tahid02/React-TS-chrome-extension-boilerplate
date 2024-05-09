@@ -14,6 +14,6 @@
 
 ### Step 3:
 ##### Load Extension 
-- visit ```chrome://extension```
+- visit ```chrome://extensions/```
 - enable developer mood
 - drag and drop the ```dist``` folder that was generated on ```step 2```
