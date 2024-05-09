@@ -22,6 +22,12 @@ module.exports = {
         test: /\.css$/i, // convert .tsx to js using ts-loader package
         exclude: /node_modules/,
       },
+      {
+        type: "asset/resource",
+        test: /\.(jpg|jpeg|png|woff|woff2|ot|ttf|svg)$/,
+
+        // I prefer to do these relative imports  (<img src="icon.png" alt="" width="400" />), but that's another option if you want to do it. And this is important because sometimes when we install certain modules, it comes packed in with font files or SVG files for icons and we need to use the special rule in order to handle those.
+      },
     ],
   },
   plugins: [

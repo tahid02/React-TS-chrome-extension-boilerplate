@@ -13,5 +13,6 @@ console.log(document.getElementById("root"));
 root.render(
   <StrictMode>
     <h1>Your App</h1>
+    <img src="icon.png" alt="" width="400" />
   </StrictMode>
 );
