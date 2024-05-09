@@ -2,7 +2,7 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlPlugin = require("html-webpack-plugin");
-
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   mode: "development",
   devtool: "cheap-module-source-map",
@@ -34,6 +34,11 @@ module.exports = {
   },
   plugins: [
     // it can handle anything that module cant do
+
+    new CleanWebpackPlugin({
+      cleanStaleWebpackAssets: false,
+      // we'll set to false because we don't want the distribution folder to be wiped out.Every time we do a rebuild, we want it to only be wiped out any time we switch from a development build to a prod build or a prod build to development build.
+    }),
     new CopyPlugin({
       // manifest.json is static here, it has no imported files, so we directly copy it in dist folder
       patterns: [
