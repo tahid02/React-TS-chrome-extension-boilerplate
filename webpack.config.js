@@ -21,7 +21,7 @@ module.exports = {
       // manifest.json is static here, it has no imported files, so we directly copy it in dist folder
       patterns: [
         {
-          from: path.resolve("src/manifest.json"), //
+          from: path.resolve("src/static"), //
           to: path.resolve("dist"),
         },
       ],
