@@ -1,5 +1,6 @@
 ## React-Typescript chrome extension boilerplate setup guide
 
+#### React 18 | mv3
 
 ### Step 1:
 ##### Installation
