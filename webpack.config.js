@@ -2,6 +2,7 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlPlugin = require("html-webpack-plugin");
+
 module.exports = {
   mode: "development",
   devtool: "cheap-module-source-map",
@@ -48,5 +49,10 @@ module.exports = {
   output: {
     filename: "[name].js", // Bundle the imported files in this single files
     path: path.resolve(__dirname, "dist"),
+  },
+  optimization: {
+    splitChunks: {
+      chunk: "all",
+    },
   },
 };
