@@ -17,6 +17,11 @@ module.exports = {
         test: /\.tsx?$/, // convert .tsx to js using ts-loader package
         exclude: /node_modules/,
       },
+      {
+        use: ["style-loader", "css-loader"],
+        test: /\.css$/i, // convert .tsx to js using ts-loader package
+        exclude: /node_modules/,
+      },
     ],
   },
   plugins: [
