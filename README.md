@@ -2,13 +2,14 @@
 
 
 ### Step 1:
-##### Installatsion
-```npm install```
+##### Installation
+- clone the repository
+- ```npm install```
 
 ### Step 2:
 ##### Development
 ```npm start```
-##### For Production build
+##### For a Production build
 ```npm run build```
 
 ### Step 3:
