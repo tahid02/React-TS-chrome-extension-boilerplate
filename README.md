@@ -19,6 +19,7 @@
 - enable developer mood
 - drag and drop the ```dist``` folder that was generated on ```step 2```
 
-##### optional: uploading to website 
+##### optional: uploading to website
+Example Justifications: 
 ![image](https://github.com/tahid02/React-TS-chrome-extension-boilerplate/assets/73460428/2736046a-8744-430c-8b74-288d8efe23cc)
 
